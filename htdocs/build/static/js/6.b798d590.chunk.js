@@ -1,2 +1,0 @@
-webpackJsonp([6],{201:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var a=n(0),l=n.n(a),c=n(14),i=function(e){return l.a.createElement(c.a,Object.assign({},e,{sidebar:!1}),l.a.createElement("h2",null,"About"),e.post.post_content,l.a.createElement("p",null,"Additional text that isn't in DB!"))};t.default=i}});
-//# sourceMappingURL=6.b798d590.chunk.js.map
