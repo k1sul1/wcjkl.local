@@ -57,3 +57,10 @@ myrecording
 !/customizations/bin
 
 client
+htdocs/asset-manifest.json
+htdocs/favicon.ico
+htdocs/index.html
+htdocs/manifest.json
+htdocs/service-worker.js
+htdocs/static
+
