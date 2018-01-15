@@ -108,9 +108,8 @@ jobs:
               --no-perms \
               --exclude='node_modules' \
               --exclude='wordpress' \
-              --exclude='wp-load.php' \
-              --exclude='wp-config.php' \
-              --exclude='wp-content' \
+              --exclude='index.html' \
+              --exclude='wp-*' \
               --exclude='router.php' \
               --delete \
               -e 'ssh -T -o Compression=no -o StrictHostKeyChecking=no -p 22' \
