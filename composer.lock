@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f75eea2668f1968d6575129d20eb1701",
+    "content-hash": "8aee28d5bc197ffdafe97dffaa764135",
     "packages": [
         {
             "name": "airesvsg/acf-to-rest-api",
@@ -506,6 +506,94 @@
             ],
             "description": "Expose more data in the WordPress REST API pages endpoint",
             "time": "2017-12-06T19:45:40+00:00"
+        },
+        {
+            "name": "k1sul1/post-type-slides",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/k1sul1/post-type-slides.git",
+                "reference": "bd2f9c87077b3c0d436073b188b86c085efb5a28"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/k1sul1/post-type-slides/zipball/bd2f9c87077b3c0d436073b188b86c085efb5a28",
+                "reference": "bd2f9c87077b3c0d436073b188b86c085efb5a28",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/vincit/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://repo.packagist.com/vincit/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2018-01-15T15:21:18+00:00"
+        },
+        {
+            "name": "k1sul1/rest-post-lookup",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/k1sul1/rest-post-lookup.git",
+                "reference": "ae8a4169036f322d1e9689a677c803b3c21c734f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/k1sul1/rest-post-lookup/zipball/ae8a4169036f322d1e9689a677c803b3c21c734f",
+                "reference": "ae8a4169036f322d1e9689a677c803b3c21c734f",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/vincit/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://repo.packagist.com/vincit/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Nikkanen",
+                    "email": "hi@kisu.li"
+                }
+            ],
+            "description": "Endpoint that let's you query with an url and get a post object in return.",
+            "time": "2018-01-15T15:27:51+00:00"
+        },
+        {
+            "name": "k1sul1/shortcode-html-wrappers",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/k1sul1/shortcode-html-wrappers.git",
+                "reference": "329490a4eb1d66a85b1136fa605fa213e51029f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/k1sul1/shortcode-html-wrappers/zipball/329490a4eb1d66a85b1136fa605fa213e51029f0",
+                "reference": "329490a4eb1d66a85b1136fa605fa213e51029f0",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/vincit/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://repo.packagist.com/vincit/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2018-01-15T15:25:19+00:00"
         },
         {
             "name": "koodimonni-language/fi",
@@ -1856,6 +1944,9 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "k1sul1/expose-more-pagedata-in-rest": 20,
+        "k1sul1/rest-post-lookup": 20,
+        "k1sul1/post-type-slides": 20,
+        "k1sul1/shortcode-html-wrappers": 20,
         "rarst/wps": 20,
         "vincit/wordpress": 20
     },
