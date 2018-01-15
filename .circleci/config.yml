@@ -107,9 +107,14 @@ jobs:
               --omit-dir-times \
               --no-perms \
               --exclude='node_modules' \
+              --exclude='wordpress' \
+              --exclude='wp-load.php' \
+              --exclude='wp-config.php' \
+              --exclude='wp-content' \
+              --exclude='router.php' \
               --delete \
               -e 'ssh -T -o Compression=no -o StrictHostKeyChecking=no -p 22' \
-              '~/repo/htdocs/ asset-manifest.json favicon.ico index.php manifest.json service-worker.js static'  circleci@wordpress.vincit.io:/var/www/html/htdocs/WCJKL
+              ~/repo/htdocs/  circleci@wordpress.vincit.io:/var/www/html/htdocs/WCJKL
 
               sshpass -e rsync -av --progress \
               --omit-dir-times \
