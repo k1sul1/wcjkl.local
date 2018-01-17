@@ -6,6 +6,7 @@ production:
   # This is used to automatically fetch data from a staging/production environment
   domain: ccthwpd.fi.seravo.com
   ssh_port: 10695
+  user: ccthwpd
   url: https://ccthwpd.fi.seravo.com/
 development:
   # Domains are automatically mapped to Vagrant with /etc/hosts modifications
