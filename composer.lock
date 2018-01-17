@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c5472c1b50538fae0066f2fd625fc19",
+    "content-hash": "1f89537afb09964ac138485cf2867f56",
     "packages": [
         {
             "name": "airesvsg/acf-to-rest-api",
@@ -375,16 +375,16 @@
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "4.9.1",
+            "version": "4.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "e47f6652557c3160ee432c2fca5594ac1a8698f5"
+                "reference": "59292fac30315323ce99e1a1d362015581e5d8e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/e47f6652557c3160ee432c2fca5594ac1a8698f5",
-                "reference": "e47f6652557c3160ee432c2fca5594ac1a8698f5",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/59292fac30315323ce99e1a1d362015581e5d8e6",
+                "reference": "59292fac30315323ce99e1a1d362015581e5d8e6",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -397,7 +397,7 @@
                 "php": ">=5.3.2"
             },
             "provide": {
-                "wordpress/core-implementation": "4.9.1"
+                "wordpress/core-implementation": "4.9.2"
             },
             "type": "wordpress-core",
             "notification-url": "https://repo.packagist.com/vincit/downloads/",
@@ -417,7 +417,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-11-29T21:57:13+00:00"
+            "time": "2018-01-16T23:12:12+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -479,12 +479,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/k1sul1/expose-more-pagedata-in-rest.git",
-                "reference": "5b273b8a05cbeb829d718b76a5c56778ae20af8e"
+                "reference": "7d57031a98ada6eac8aa0721fab1cdab2c831ae1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/k1sul1/expose-more-pagedata-in-rest/zipball/5b273b8a05cbeb829d718b76a5c56778ae20af8e",
-                "reference": "5b273b8a05cbeb829d718b76a5c56778ae20af8e",
+                "url": "https://api.github.com/repos/k1sul1/expose-more-pagedata-in-rest/zipball/7d57031a98ada6eac8aa0721fab1cdab2c831ae1",
+                "reference": "7d57031a98ada6eac8aa0721fab1cdab2c831ae1",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -505,7 +505,7 @@
                 }
             ],
             "description": "Expose more data in the WordPress REST API pages endpoint",
-            "time": "2017-12-06T19:45:40+00:00"
+            "time": "2018-01-15T15:31:59+00:00"
         },
         {
             "name": "k1sul1/post-type-slides",
@@ -540,12 +540,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/k1sul1/rest-post-lookup.git",
-                "reference": "ae8a4169036f322d1e9689a677c803b3c21c734f"
+                "reference": "c9c73e2d3791864c8e4a9fd45e96a6772de4d987"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/k1sul1/rest-post-lookup/zipball/ae8a4169036f322d1e9689a677c803b3c21c734f",
-                "reference": "ae8a4169036f322d1e9689a677c803b3c21c734f",
+                "url": "https://api.github.com/repos/k1sul1/rest-post-lookup/zipball/c9c73e2d3791864c8e4a9fd45e96a6772de4d987",
+                "reference": "c9c73e2d3791864c8e4a9fd45e96a6772de4d987",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -566,7 +566,7 @@
                 }
             ],
             "description": "Endpoint that let's you query with an url and get a post object in return.",
-            "time": "2018-01-15T15:27:51+00:00"
+            "time": "2018-01-15T15:42:03+00:00"
         },
         {
             "name": "k1sul1/shortcode-html-wrappers",
@@ -594,6 +594,40 @@
                 "MIT"
             ],
             "time": "2018-01-15T15:25:19+00:00"
+        },
+        {
+            "name": "k1sul1/wplf-export",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/libreform/export.git",
+                "reference": "7841be9a5954e6dd389a85d438ddacae41c978b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/libreform/export/zipball/7841be9a5954e6dd389a85d438ddacae41c978b2",
+                "reference": "7841be9a5954e6dd389a85d438ddacae41c978b2",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/vincit/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://repo.packagist.com/vincit/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Nikkanen",
+                    "email": "christian.nikkanen@gmail.com"
+                }
+            ],
+            "description": "Export form data from WP Libre Form.",
+            "time": "2017-06-10T17:24:47+00:00"
         },
         {
             "name": "koodimonni-language/fi",
