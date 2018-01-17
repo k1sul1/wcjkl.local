@@ -4,11 +4,10 @@
 name: wcjkl
 production:
   # This is used to automatically fetch data from a staging/production environment
-  domain: wordpress.vincit.io
+  domain: ccthwpd.fi.seravo.com
   ssh_port: 22
   user: circleci
-  url: https://wordpress.vincit.io/WCJKL/
-  uploadDir: /var/www/html/htdocs/WCJKL/wp-content/uploads/
+  url: https://ccthwpd.fi.seravo.com/
 development:
   # Domains are automatically mapped to Vagrant with /etc/hosts modifications
   domains:
