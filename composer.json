@@ -32,9 +32,9 @@
     "preferred-install": {
       "vincit/wordpress-theme-base": "source",
       "vincit/*": "source",
+      "k1sul1/*": "source",
       "*": "dist"
     }
-
   },
   "autoload": {
     "psr-0": {
@@ -91,7 +91,6 @@
     "devgeniem/wp-core-blocker": "^0.3.2",
 
     "wpackagist-theme/twentyseventeen": "*",
-    "k1sul1/expose-more-pagedata-in-rest": "dev-master",
     "k1sul1/rest-post-lookup": "@dev",
     "k1sul1/post-type-slides": "dev-master",
     "k1sul1/shortcode-html-wrappers": "dev-master",
@@ -102,7 +101,8 @@
     "wpackagist-plugin/simple-page-ordering": "^2.2",
     "wpackagist-plugin/svg-support": "^2.3",
     "wpackagist-plugin/jwt-authentication-for-wp-rest-api": "^1.2",
-    "k1sul1/wplf-export": "^1.0"
+    "k1sul1/wplf-export": "^1.0",
+    "k1sul1/expose-more-pagedata-in-rest": "0.1"
   },
   "require-dev": {
     "rarst/wps": "dev-master",

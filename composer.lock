@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1f89537afb09964ac138485cf2867f56",
+    "content-hash": "d17c5fc5e39a69b680b69db486f0b86d",
     "packages": [
         {
             "name": "airesvsg/acf-to-rest-api",
@@ -475,26 +475,20 @@
         },
         {
             "name": "k1sul1/expose-more-pagedata-in-rest",
-            "version": "dev-master",
+            "version": "0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/k1sul1/expose-more-pagedata-in-rest.git",
-                "reference": "7d57031a98ada6eac8aa0721fab1cdab2c831ae1"
+                "reference": "0d7d6c88d44874c53ab0339d1d5b3793242340c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/k1sul1/expose-more-pagedata-in-rest/zipball/7d57031a98ada6eac8aa0721fab1cdab2c831ae1",
-                "reference": "7d57031a98ada6eac8aa0721fab1cdab2c831ae1",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/vincit/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "url": "https://api.github.com/repos/k1sul1/expose-more-pagedata-in-rest/zipball/0d7d6c88d44874c53ab0339d1d5b3793242340c6",
+                "reference": "0d7d6c88d44874c53ab0339d1d5b3793242340c6",
+                "shasum": ""
             },
             "type": "wordpress-plugin",
-            "notification-url": "https://repo.packagist.com/vincit/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0"
             ],
@@ -505,7 +499,7 @@
                 }
             ],
             "description": "Expose more data in the WordPress REST API pages endpoint",
-            "time": "2018-01-15T15:31:59+00:00"
+            "time": "2018-01-17T12:18:06+00:00"
         },
         {
             "name": "k1sul1/post-type-slides",
@@ -1977,7 +1971,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "k1sul1/expose-more-pagedata-in-rest": 20,
         "k1sul1/rest-post-lookup": 20,
         "k1sul1/post-type-slides": 20,
         "k1sul1/shortcode-html-wrappers": 20,
