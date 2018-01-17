@@ -58,12 +58,12 @@ jobs:
             # set +eo pipefail
             # set -x
             # Get WP-cli
-            curl -O https://raw.githubccthwpdcontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+            curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
             # Install WordPress
             php wp-cli.phar core install \
               --url=$WP_TEST_URL \
               --title='Test' \
-              --admin_ccthwpd=$WP_TEST_USER \
+              ----admin_user=$WP_TEST_USER \
               --admin_password=$WP_TEST_USER_PASS \
               --admin_email="$WP_TEST_USER@wordpress.dev" \
               --path=htdocs/wordpress
@@ -75,7 +75,7 @@ jobs:
             php wp-cli.phar plugin activate --all --path=htdocs/wordpress
             # Get alternative router so we can do without Apache or nginx
             cd ~/repo
-            curl -s https://raw.githubccthwpdcontent.com/Seravo/wordpress-test-template/master/lib/router.php > htdocs/router.php
+            curl -s https://raw.githubusercontent.com/Seravo/wordpress-test-template/master/lib/router.php > htdocs/router.php
             cd htdocs
             ls
             php -S 0.0.0.0:8080 router.php &
