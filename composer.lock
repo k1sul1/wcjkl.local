@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2e86e14e05b05ea9c34240382e824ec6",
+    "content-hash": "8b6dc76042468bd7ffc21b5fd535e8c5",
     "packages": [
         {
             "name": "airesvsg/acf-to-rest-api",
@@ -479,12 +479,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/k1sul1/expose-more-pagedata-in-rest.git",
-                "reference": "24828e6"
+                "reference": "523affb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/k1sul1/expose-more-pagedata-in-rest/zipball/24828e6",
-                "reference": "24828e6",
+                "url": "https://api.github.com/repos/k1sul1/expose-more-pagedata-in-rest/zipball/523affb6",
+                "reference": "523affb6",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -505,7 +505,7 @@
                 }
             ],
             "description": "Expose more data in the WordPress REST API pages endpoint",
-            "time": "2018-01-17T15:33:34+00:00"
+            "time": "2018-01-17T21:20:11+00:00"
         },
         {
             "name": "k1sul1/post-type-slides",
