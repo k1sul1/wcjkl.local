@@ -33,6 +33,7 @@ jobs:
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "composer.json" }}
+          - v1-dependencies-{{ checksum "htdocs/wp-content/themes/wordpress-theme-base/package.json" }}
 
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
@@ -43,7 +44,6 @@ jobs:
             # sudo apt-get install pv mysql-client sshpass
             # sudo docker-php-ext-install mysqli pdo pdo_mysql # WTF, why aren't these installed already?
             composer install -n --prefer-dist --no-dev
-
       - run:
           name: Build frontend
           command: |
@@ -52,85 +52,42 @@ jobs:
             cd client
             npm install
             npm run build
-
       - run:
           name: Install WordPress
           command: |
             # set +eo pipefail
             # set -x
-
             # Get WP-cli
-            curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-
+            curl -O https://raw.githubccthwpdcontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
             # Install WordPress
             php wp-cli.phar core install \
               --url=$WP_TEST_URL \
               --title='Test' \
-              --admin_user=$WP_TEST_USER \
+              --admin_ccthwpd=$WP_TEST_USER \
               --admin_password=$WP_TEST_USER_PASS \
               --admin_email="$WP_TEST_USER@wordpress.dev" \
               --path=htdocs/wordpress
-
             # Get the database
-            sshpass -e ssh -q -o StrictHostKeyChecking=no circleci@wordpress.vincit.io -p 22 'wp db --path=/var/www/html/htdocs/WCJKL/ export - --single-transaction' > database.sql
+            sshpass -e ssh -q -o StrictHostKeyChecking=no ccthwpd@ccthwpd.fi.seravo.com -p 10695 'wp db export - --single-transaction' > database.sql
             mysql -h 127.0.0.1 -u root -D circle_test < database.sql
             rm database.sql
-
             # Activate all plugins
             php wp-cli.phar plugin activate --all --path=htdocs/wordpress
-
             # Get alternative router so we can do without Apache or nginx
             cd ~/repo
-            curl -s https://raw.githubusercontent.com/Seravo/wordpress-test-template/master/lib/router.php > htdocs/router.php
+            curl -s https://raw.githubccthwpdcontent.com/Seravo/wordpress-test-template/master/lib/router.php > htdocs/router.php
             cd htdocs
             ls
-
             php -S 0.0.0.0:8080 router.php &
             sleep 2; # This randomly fixed issue with not being able to connect
             curl -i http://localhost:8080
-
       - run:
           name: Deploy
           command: |
             # Handle restarting nginx and so on...
             if [ $CIRCLE_BRANCH == 'master' ]; then
-              # sshpass -e rsync -av --progress \
-              # --omit-dir-times \
-              # --no-perms \
-              # --exclude='node_modules' \
-              # --delete \
-              # -e 'ssh -T -o Compression=no -o StrictHostKeyChecking=no -p 22' \
-              # ~/repo/htdocs/wp-content/themes/ circleci@wordpress.vincit.io:/var/www/html/htdocs/WCJKL/wp-content/themes
-
-              sshpass -e rsync -av --progress \
-              --omit-dir-times \
-              --no-perms \
-              --exclude='node_modules' \
-              --exclude='wordpress' \
-              --exclude='index.html' \
-              --exclude='wp-*' \
-              --exclude='router.php' \
-              --delete \
-              -e 'ssh -T -o Compression=no -o StrictHostKeyChecking=no -p 22' \
-              ~/repo/htdocs/  circleci@wordpress.vincit.io:/var/www/html/htdocs/WCJKL
-
-              sshpass -e rsync -av --progress \
-              --omit-dir-times \
-              --no-perms \
-              --exclude='node_modules' \
-              --delete \
-              -e 'ssh -T -o Compression=no -o StrictHostKeyChecking=no -p 22' \
-              ~/repo/htdocs/wp-content/plugins/ circleci@wordpress.vincit.io:/var/www/html/htdocs/WCJKL/wp-content/plugins
-
-              sshpass -e rsync -av --progress \
-              --omit-dir-times \
-              --no-perms \
-              --exclude='node_modules' \
-              --delete \
-              -e 'ssh -T -o Compression=no -o StrictHostKeyChecking=no -p 22' \
-              ~/repo/htdocs/wp-content/mu-plugins/ circleci@wordpress.vincit.io:/var/www/html/htdocs/WCJKL/wp-content/mu-plugins
+              sshpass -e rsync -av --progress --exclude='node_modules' --delete --exclude='*/wp-content/uploads/*' -e 'ssh -T -o Compression=no -o StrictHostKeyChecking=no -p 10695' ~/repo/ ccthwpd@ccthwpd.fi.seravo.com:/data/wordpress
             fi
-
       # - run: # Say no to ruby, try Puppeteer
           # name: RSpec
           # command: |
@@ -158,7 +115,7 @@ jobs:
           # name: Deploy to staging
           # command: |
             # sudo apt-get install sshpass
-            # sshpass -e scp -r -P 10349 USER@TARGET.domain:/data/wordpress ~/repo
+            # sshpass -e scp -r -P 10695 USER@TARGET.domain:/data/wordpress ~/repo
 
 workflows:
   version: 2
