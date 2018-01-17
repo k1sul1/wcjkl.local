@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d17c5fc5e39a69b680b69db486f0b86d",
+    "content-hash": "8b93d3f1a1efd02acbb00f65ecf47f85",
     "packages": [
         {
             "name": "airesvsg/acf-to-rest-api",
@@ -475,20 +475,26 @@
         },
         {
             "name": "k1sul1/expose-more-pagedata-in-rest",
-            "version": "0.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/k1sul1/expose-more-pagedata-in-rest.git",
-                "reference": "0d7d6c88d44874c53ab0339d1d5b3793242340c6"
+                "reference": "0d7d6c88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/k1sul1/expose-more-pagedata-in-rest/zipball/0d7d6c88d44874c53ab0339d1d5b3793242340c6",
-                "reference": "0d7d6c88d44874c53ab0339d1d5b3793242340c6",
-                "shasum": ""
+                "url": "https://api.github.com/repos/k1sul1/expose-more-pagedata-in-rest/zipball/0d7d6c88",
+                "reference": "0d7d6c88",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/vincit/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "type": "wordpress-plugin",
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.packagist.com/vincit/downloads/",
             "license": [
                 "GPL-2.0"
             ],
@@ -1974,6 +1980,7 @@
         "k1sul1/rest-post-lookup": 20,
         "k1sul1/post-type-slides": 20,
         "k1sul1/shortcode-html-wrappers": 20,
+        "k1sul1/expose-more-pagedata-in-rest": 20,
         "rarst/wps": 20,
         "vincit/wordpress": 20
     },
