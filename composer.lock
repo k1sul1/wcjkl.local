@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b6dc76042468bd7ffc21b5fd535e8c5",
+    "content-hash": "829b57c89fbdfd45ebb98f0d261f7fe1",
     "packages": [
         {
             "name": "airesvsg/acf-to-rest-api",
@@ -513,12 +513,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/k1sul1/post-type-slides.git",
-                "reference": "bd2f9c87077b3c0d436073b188b86c085efb5a28"
+                "reference": "9ffcc72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/k1sul1/post-type-slides/zipball/bd2f9c87077b3c0d436073b188b86c085efb5a28",
-                "reference": "bd2f9c87077b3c0d436073b188b86c085efb5a28",
+                "url": "https://api.github.com/repos/k1sul1/post-type-slides/zipball/9ffcc72",
+                "reference": "9ffcc72",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -532,7 +532,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2018-01-15T15:21:18+00:00"
+            "time": "2018-01-17T21:54:49+00:00"
         },
         {
             "name": "k1sul1/rest-post-lookup",

@@ -92,7 +92,7 @@
 
     "wpackagist-theme/twentyseventeen": "*",
     "k1sul1/rest-post-lookup": "@dev",
-    "k1sul1/post-type-slides": "dev-master",
+    "k1sul1/post-type-slides": "dev-master#9ffcc72",
     "k1sul1/shortcode-html-wrappers": "dev-master",
     "wpackagist-plugin/wp-api-menus": "^1.3",
     "wpackagist-plugin/wp-markdown": "^1.6",
