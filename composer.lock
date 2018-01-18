@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "829b57c89fbdfd45ebb98f0d261f7fe1",
+    "content-hash": "bd5b4c31037044c06bdde2d1832484b4",
     "packages": [
         {
             "name": "airesvsg/acf-to-rest-api",
@@ -540,12 +540,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/k1sul1/rest-post-lookup.git",
-                "reference": "c9c73e2d3791864c8e4a9fd45e96a6772de4d987"
+                "reference": "e01cd08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/k1sul1/rest-post-lookup/zipball/c9c73e2d3791864c8e4a9fd45e96a6772de4d987",
-                "reference": "c9c73e2d3791864c8e4a9fd45e96a6772de4d987",
+                "url": "https://api.github.com/repos/k1sul1/rest-post-lookup/zipball/e01cd08",
+                "reference": "e01cd08",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -566,7 +566,7 @@
                 }
             ],
             "description": "Endpoint that let's you query with an url and get a post object in return.",
-            "time": "2018-01-15T15:42:03+00:00"
+            "time": "2018-01-18T21:48:22+00:00"
         },
         {
             "name": "k1sul1/shortcode-html-wrappers",
