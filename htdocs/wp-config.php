@@ -23,8 +23,8 @@ if (file_exists($root_dir . '/.env')) {
   Dotenv::load($root_dir);
 }
 
-define("JWT_AUTH_SECRET_KEY", "JUST FOR LULZ");
-define("JWT_AUTH_CORS_ENABLE", true);
+define("SIMPLE_JWT_AUTHENTICATION_SECRET_KEY", "JUST FOR LULZ");
+define("SIMPLE_JWT_AUTHENTICATION_CORS_ENABLE", true);
 
 /**
  * DB settings

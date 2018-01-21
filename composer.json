@@ -60,6 +60,10 @@
     {
       "type": "composer",
       "url": "https://repo.packagist.com/vincit/"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/jonathan-dejong/simple-jwt-authentication"
     }
   ],
   "require": {
@@ -102,7 +106,9 @@
     "wpackagist-plugin/svg-support": "^2.3",
     "wpackagist-plugin/jwt-authentication-for-wp-rest-api": "^1.2",
     "k1sul1/wplf-export": "^1.0",
-    "k1sul1/expose-more-pagedata-in-rest": "dev-master#523affb6"
+    "k1sul1/expose-more-pagedata-in-rest": "dev-master#523affb6",
+    "wpackagist-plugin/publish-confirm": "^1.0",
+    "jonathan-dejong/simple-jwt-authentication": "dev-master"
   },
   "require-dev": {
     "rarst/wps": "dev-master",
@@ -111,7 +117,7 @@
   "extra": {
     "installer-paths": {
       "htdocs/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin", "rarst/wps"],
-      "htdocs/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "htdocs/wp-content/plugins/{$name}/": ["type:wordpress-plugin", "jonathan-dejong/simple-jwt-authentication"],
       "htdocs/wp-content/themes/{$name}": ["type:wordpress-theme"]
     },
     "dropin-paths": {

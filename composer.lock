@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bd5b4c31037044c06bdde2d1832484b4",
+    "content-hash": "0c567c11b164cb745f6bcd4f6f61b583",
     "packages": [
         {
             "name": "airesvsg/acf-to-rest-api",
@@ -347,6 +347,63 @@
             "time": "2017-01-14T18:15:09+00:00"
         },
         {
+            "name": "donatj/phpuseragentparser",
+            "version": "v0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/donatj/PhpUserAgent.git",
+                "reference": "ea79de6a18e52285e62cd75cf1cebe276ecaf503"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/donatj/PhpUserAgent/zipball/ea79de6a18e52285e62cd75cf1cebe276ecaf503",
+                "reference": "ea79de6a18e52285e62cd75cf1cebe276ecaf503",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/vincit/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "camspiers/json-pretty": "0.1.*",
+                "donatj/drop": "*",
+                "phpunit/phpunit": "~4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "Source/UserAgentParser.php"
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/vincit/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jesse G. Donat",
+                    "email": "donatj@gmail.com",
+                    "homepage": "http://donatstudios.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple, streamlined PHP user-agent parser",
+            "homepage": "http://donatstudios.com/PHP-Parser-HTTP_USER_AGENT",
+            "keywords": [
+                "browser",
+                "browser detection",
+                "parser",
+                "user agent",
+                "useragent"
+            ],
+            "time": "2017-10-23T16:52:52+00:00"
+        },
+        {
             "name": "elliotcondon/advanced-custom-fields-pro",
             "version": "5.6.7",
             "source": {
@@ -372,6 +429,55 @@
                 "GPL-2.0"
             ],
             "time": "2017-12-20T08:40:15+00:00"
+        },
+        {
+            "name": "firebase/php-jwt",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/firebase/php-jwt.git",
+                "reference": "fa8a06e96526eb7c0eeaa47e4f39be59d21f16e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/fa8a06e96526eb7c0eeaa47e4f39be59d21f16e1",
+                "reference": "fa8a06e96526eb7c0eeaa47e4f39be59d21f16e1",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/vincit/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Firebase\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://repo.packagist.com/vincit/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Neuman Vong",
+                    "email": "neuman+pear@twilio.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Anant Narayanan",
+                    "email": "anant@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
+            "homepage": "https://github.com/firebase/php-jwt",
+            "time": "2015-07-22T18:31:08+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
@@ -472,6 +578,32 @@
                 "wordpress"
             ],
             "time": "2015-06-11T15:15:30+00:00"
+        },
+        {
+            "name": "jonathan-dejong/simple-jwt-authentication",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jonathan-dejong/simple-jwt-authentication.git",
+                "reference": "ab58e0e9dae45ab0e7dff871872f448fdfde580a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jonathan-dejong/simple-jwt-authentication/zipball/ab58e0e9dae45ab0e7dff871872f448fdfde580a",
+                "reference": "ab58e0e9dae45ab0e7dff871872f448fdfde580a",
+                "shasum": ""
+            },
+            "require": {
+                "donatj/phpuseragentparser": "*",
+                "firebase/php-jwt": "^3.0"
+            },
+            "type": "library",
+            "description": "Extends the WP REST API using JSON Web Tokens Authentication as an authentication method",
+            "support": {
+                "source": "https://github.com/jonathan-dejong/simple-jwt-authentication/tree/v.1.1",
+                "issues": "https://github.com/jonathan-dejong/simple-jwt-authentication/issues"
+            },
+            "time": "2017-10-03T07:59:08+00:00"
         },
         {
             "name": "k1sul1/expose-more-pagedata-in-rest",
@@ -1470,6 +1602,26 @@
             "homepage": "https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/"
         },
         {
+            "name": "wpackagist-plugin/publish-confirm",
+            "version": "1.0.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/publish-confirm/",
+                "reference": "tags/1.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/publish-confirm.1.0.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/publish-confirm/"
+        },
+        {
             "name": "wpackagist-plugin/query-monitor",
             "version": "2.17.0",
             "source": {
@@ -1720,16 +1872,16 @@
         },
         {
             "name": "pimple/pimple",
-            "version": "v3.2.2",
+            "version": "v3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silexphp/Pimple.git",
-                "reference": "4d45fb62d96418396ec58ba76e6f065bca16e10a"
+                "reference": "9e403941ef9d65d20cba7d54e29fe906db42cf32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/4d45fb62d96418396ec58ba76e6f065bca16e10a",
-                "reference": "4d45fb62d96418396ec58ba76e6f065bca16e10a",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/9e403941ef9d65d20cba7d54e29fe906db42cf32",
+                "reference": "9e403941ef9d65d20cba7d54e29fe906db42cf32",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1772,7 +1924,7 @@
                 "container",
                 "dependency injection"
             ],
-            "time": "2017-07-23T07:32:15+00:00"
+            "time": "2018-01-21T07:42:36+00:00"
         },
         {
             "name": "psr/container",
@@ -1981,6 +2133,7 @@
         "k1sul1/post-type-slides": 20,
         "k1sul1/shortcode-html-wrappers": 20,
         "k1sul1/expose-more-pagedata-in-rest": 20,
+        "jonathan-dejong/simple-jwt-authentication": 20,
         "rarst/wps": 20,
         "vincit/wordpress": 20
     },
