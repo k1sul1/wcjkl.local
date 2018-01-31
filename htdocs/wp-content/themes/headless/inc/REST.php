@@ -7,7 +7,11 @@ add_action("rest_api_init", function () {
   // Add a Custom filter.
   add_filter('rest_pre_serve_request', function ($value) {
     if (\Vincit\is_prod()) {
-      header('Access-Control-Allow-Origin: https://pwademo.kisu.li');
+      $domain = $_SERVER["HTTP_ORIGIN"] === "http://localhost:3000"
+        ? $_SERVER["HTTP_ORIGIN"]
+        : "https://pwademo.kisu.li";
+
+      header("Access-Control-Allow-Origin: $domain");
     } else {
       header('Access-Control-Allow-Origin: *');
     }
