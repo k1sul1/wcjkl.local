@@ -6,6 +6,10 @@ namespace Vincit;
 
 use \Vincit\Media;
 
+$uri = $_SERVER["REQUEST_URI"];
+header("Location: https://pwademo.kisu.li$uri");
+die();
+
 ?>
 <!doctype html>
 <html>
