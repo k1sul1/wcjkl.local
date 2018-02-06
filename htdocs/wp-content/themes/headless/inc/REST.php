@@ -7,8 +7,16 @@ add_action("rest_api_init", function () {
   // Add a Custom filter.
   add_filter('rest_pre_serve_request', function ($value) {
     if (\Vincit\is_prod()) {
-      $domains = ['http://localhost:3000', 'http://localhost:5000'];
-      $domain = in_array($_SERVER["HTTP_ORIGIN"], $domains) ? $_SERVER["HTTP_ORIGIN"] : "https://pwademo.kisu.li";
+      $entries = \Vincit\Options\get("allowed_cors");
+      $domains = [];
+
+      foreach ($entries as $entry) {
+        $domains[] = $entry["url"];
+      }
+
+      $domain = in_array($_SERVER["HTTP_ORIGIN"], $domains)
+        ? $_SERVER["HTTP_ORIGIN"]
+        : "https://pwademo.kisu.li";
 
       header("Access-Control-Allow-Origin: $domain");
     } else {
